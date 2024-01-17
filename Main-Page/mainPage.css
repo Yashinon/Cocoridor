@@ -23,11 +23,13 @@ html, body {
 }
 
 #playerCard{
-    grid-column-start: 4;
-    grid-column-end: span 2;
-    grid-row: 1 ;
+    grid-column: 5;
     display: flex;
     justify-content: stretch;
+    flex-direction: row;
+    zoom: 60%;
+    margin-right: 250px;
+    margin-top: 50px;
 }
 #playerProfile {
     display: flex;
@@ -35,9 +37,10 @@ html, body {
     background-color: #ffcc00;
     border-radius: 8px;
     padding: 30px;
-    margin-bottom: 10%;
-    grid-column-start: 1;
-    grid-column-end: span 3;
+    margin-left: 130px;
+    margin-right:-50px;
+    height: fit-content;
+    
 }
 
 #playerPicture {
@@ -71,6 +74,7 @@ html, body {
 .shell{
     width: max-content;
     height: max-content;
+    padding: auto;
 }
 .shell img{
     width: 200px;
