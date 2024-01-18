@@ -27,7 +27,7 @@ html, body {
     display: flex;
     justify-content: stretch;
     flex-direction: row;
-    zoom: 60%;
+    zoom: 40%;
     margin-right: 250px;
     margin-top: 50px;
 }
