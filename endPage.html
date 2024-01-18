@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="endPage.css">
+  <title>Résultat de la partie</title>
+</head>
+<body>
+
+<div id="result-screen">
+  <div id="result-message"></div>
+ 
+    <img id='result-image' src="" alt="Image de victoire, de défaite ou d'égalité">
+  
+</div>
+
+<script >
+      document.addEventListener('DOMContentLoaded', function() {
+    var victory = 0;
+    var resultMessage = document.getElementById('result-message');
+    var resultImage = document.getElementById('result-image');
+
+    if (victory === 1) {
+      resultMessage.textContent = 'Victoire !';
+      resultMessage.classList.add('victory');
+      resultImage.src = 'victoire.jpg'; // Remplacez par le chemin de votre image de victoire
+    } else if (victory === 0) {
+      resultMessage.textContent = 'Égalité.';
+      resultMessage.classList.add('draw');
+      resultImage.src = 'egalite.jpg'; // Remplacez par le chemin de votre image d'égalité
+    } else if (victory === -1) {
+      resultMessage.textContent = 'Défaite.';
+      resultMessage.classList.add('defeat');
+      resultImage.src = 'defaite.jpg'; // Remplacez par le chemin de votre image de défaite
+    }
+  });
+</script>
+
+</body>
+</html>
